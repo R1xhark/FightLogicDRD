@@ -1,4 +1,5 @@
 ﻿using System;
+using FightLogicDRD.Methods;
 
 namespace FightLogicDRD
 {
@@ -6,7 +7,11 @@ namespace FightLogicDRD
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            VytvorPostavu vytvor = new VytvorPostavu();
+            vytvor.vytvorPostavu();
+
+            SoubojEngine fight= new SoubojEngine();
+            fight.souboj();
         }
     }
 }

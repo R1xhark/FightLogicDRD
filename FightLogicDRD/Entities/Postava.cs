@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FightLogicDRD.Enemies;
 
 namespace FightLogicDRD
 {
-    class Postava
+    public class Postava
     {
 
         public int Obrana { get; set; }
@@ -19,6 +20,10 @@ namespace FightLogicDRD
         public static void vytvorPostavu()
         {
             
+        }
+        public void Utoc(BasicEnemy Enemy,Postava Hrac)
+        {
+            Enemy.Zivot = -Hrac.Sila;
         }
     }
 }  
