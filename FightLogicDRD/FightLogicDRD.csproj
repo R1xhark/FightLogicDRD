@@ -5,4 +5,11 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Enemies\" />
+    <Folder Include="Entities\NPCS\" />
+    <Folder Include="Maps\" />
+    <Folder Include="Quests\" />
+  </ItemGroup>
+
 </Project>
