@@ -29,12 +29,14 @@ namespace FightLogicDRD.Methods
                 var ProtivnikInciativa = sesticklenka.hod();
                 if (Hraciniciativa > ProtivnikInciativa)
                 {
-                    prvniProtivnik.BranSe();
+                    
                     Hrac.Utoc(prvniProtivnik,Hrac);
+                    Hrac.BranSe(prvniProtivnik,Hrac);
                 }
                 if (ProtivnikInciativa > Hraciniciativa)
                 {
                     prvniProtivnik.Utoc(prvniProtivnik,Hrac);
+                    prvniProtivnik.BranSe(prvniProtivnik, Hrac);
                 }
             }
             if (Hrac.zivoty.Equals(0)) { 
@@ -43,15 +45,15 @@ namespace FightLogicDRD.Methods
                 Console.Read();
             }
             if (prvniProtivnik.Zivot.Equals(0))
-            {
+    {
                 Console.WriteLine("porazil jsi protivnika");
             }
 
         }
 
-        }
+    }
 
 
         
-    }
+}
 
