@@ -43,15 +43,15 @@ namespace FightLogicDRD.Methods
                 Console.Read();
             }
             if (prvniProtivnik.Zivot.Equals(0))
-            {
+    {
                 Console.WriteLine("porazil jsi protivnika");
             }
 
         }
 
-        }
+    }
 
 
         
-    }
+}
 
